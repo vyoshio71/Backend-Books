@@ -1,0 +1,31 @@
+POST http://localhost:3000/livros
+Content-Type: application/json
+
+{
+    "id": 3,
+    "titulo": "algum titulo",
+    "num_paginas": 55,
+    "isbn": 54342342,
+    "editora": "editora"
+}   
+
+###
+GET http://localhost:3000/livros
+
+###
+GET http://localhost:3000/livros/64890bca5b59479e3c7deb82
+
+###
+DELETE http://localhost:3000/livros/64890a6f5b59479e3c7deb7b
+
+###
+PUT http://localhost:3000/livros/64890bca5b59479e3c7deb82
+Content-Type: application/json
+
+{
+    "id": 3,
+    "titulo": "algum titulo att",
+    "num_paginas": 555,
+    "isbn": 423421231,
+    "editora": "editora att"
+}   
